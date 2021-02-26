@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.title h1 {
+  color: rgb(88, 88, 236);
+  font-size: 25px;
+  line-height: 1.5;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.product {
+  min-height: 60vh;
+  width: 900px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.product-images {
+  width: 470px;
+  height: 450px;
+  margin: 0 50px;
+  padding-right: 15px;
+}
+
+.big_img {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px 20px;
+}
+
+.small_img {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(190, 178, 178, 0.459);
+  margin: 0 5px;
+}
+
+.small_img:hover,
+.big_img:hover {
+  transform: scale(1.2);
+}
+
+.product-chose {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.product-chose .name {
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 1.4;
+  color: rgb(46, 41, 41);
+}
+
+.product-chose .price {
+  display: flex;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.product-chose .price p {
+  color: red;
+  margin-left: 5px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+ul p {
+  font-size: 14px;
+  color: rgb(151, 142, 142);
+}
+
+button {
+  background: white;
+  color: rgb(21, 151, 211);
+  border: 0.7px solid rgb(21, 151, 211);
+  padding: 7px 15px;
+  border-radius: 4px;
+  outline: none;
+}
+
+button:focus,
+button:hover {
+  background: rgb(21, 151, 211);
+  color: white;
+  cursor: pointer;
+}
+
+.product-chose li {
+  float: left;
+  margin: 8px 16px 8px 0;
+}
+
+.accept {
+  margin-top: 20px;
+  margin-right: 8px;
+}
+
+.accept p {
+  font-size: 14px;
+  color: rgb(151, 142, 142);
+  margin-bottom: 10px;
+}
+
+.chose_number {
+  display: flex;
+  float: left;
+}
+
+.chose_number button,
+input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgb(153, 149, 149);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  pointer-events: none;
+  outline: none;
+  width: 50px;
+  border-left: none;
+  border-right: none;
+}
+
+.chose_number button:focus,
+.chose_number button:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.btnAccept {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background: #ff0000ce;
+  padding: 10px 55px;
+  border: 0.7px solid rgb(131, 124, 124);
+  border-radius: 8px;
+  float: right;
+}
+
+.btnAccept:hover,
+.btnAccept:focus {
+  background: #be1818;
+  cursor: pointer;
+}
+
+.btnAccept:focus {
+  background: #be1818;
+}
+
+.details-contain {
+  display: flex;
+}
+
+.left {
+  margin-left: 10px;
+  width: 400px;
+  background-color: rgba(204, 204, 204, 0.787);
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left span,
+.right span {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.right {
+  width: 490px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right span:nth-child(2),
+.right span:nth-child(4) {
+  background-color: rgba(204, 204, 204, 0.246);
+}
+
+.description_text {
+  margin-left: 10px;
+  font-size: 16px;
+}
